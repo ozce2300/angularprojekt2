@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './kurser.component.css'
 })
 export class KurserComponent {
+  
 
 }
