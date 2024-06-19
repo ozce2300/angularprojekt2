@@ -76,7 +76,15 @@ export class KurserComponent{
 
   addCourseToLocalStorage(course: Courses) {
     let storedCourses = JSON.parse(localStorage.getItem('storedCourses') || '[]');
-    storedCourses.push(course);
-    localStorage.setItem('storedCourses', JSON.stringify(storedCourses));
+    const isCourseAlreadyStored = storedCourses.some((storedCourse: Courses) => storedCourse.courseCode === course.courseCode);
+    if (!isCourseAlreadyStored) {
+      storedCourses.push(course);
+      localStorage.setItem('storedCourses', JSON.stringify(storedCourses));
+    }
+  }
+
+  isCourseStored(course: Courses): boolean {
+    let storedCourses = JSON.parse(localStorage.getItem('storedCourses') || '[]');
+    return storedCourses.some((storedCourse: Courses) => storedCourse.courseCode === course.courseCode);
   }
 }
