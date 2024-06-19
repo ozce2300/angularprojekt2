@@ -32,7 +32,6 @@ h2 {
 @keyframes moveUp {
     0% {
         top: 55%;
-        /* Startar nedanför bilden */
         opacity: 0;
     }
 
@@ -46,7 +45,7 @@ h2 {
 .head-container {
     width: 100%;
     height: auto;
-    background-color: #fef5ea;
+    background-color: #ffedfa;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -71,4 +70,37 @@ h2 {
     font-weight: 100;
 
 }
+.mat-elevation-z8{
+overflow-y: hidden;
 
+}
+
+#mat-button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #fb9fe1;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    border:none;
+    cursor: pointer;
+    transition: background-color 0.25s; 
+
+}
+
+#mat-button:hover {
+    background-color: #fc63d1;
+
+
+}
+
+  @media (max-width: 760px) {
+    .mat-column-subjectCode,
+    .mat-column-level,
+    .mat-column-institutionCode,
+    .mat-column-syllabus {
+      display: none;
+    }
+  }
+  
