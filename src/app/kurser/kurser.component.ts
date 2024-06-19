@@ -11,6 +11,9 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { CommonModule } from '@angular/common';
+import { MatExpansionModule } from '@angular/material/expansion';
+
+
 
 @Component({
   selector: 'app-kurser',
@@ -22,7 +25,9 @@ import { CommonModule } from '@angular/common';
     MatSortModule,
     MatInputModule,
     MatFormFieldModule,
-    MatSelectModule
+    MatSelectModule,
+    MatExpansionModule
+    
   ],
   templateUrl: './kurser.component.html',
   styleUrls: ['./kurser.component.css']
