@@ -1,0 +1,44 @@
+.outer-container {
+    max-width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    border: 1px solid rgb(218, 218, 218);
+}
+
+.container-footer {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fef5ea;
+    color: black;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.copyright {
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2em;
+    font-weight: 100;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.social-icon img {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.social-icon img:hover {
+    transform: scale(1.1);
+}

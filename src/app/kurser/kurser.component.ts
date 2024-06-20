@@ -37,6 +37,7 @@ export class KurserComponent{
   dataSource = new MatTableDataSource<Courses>([]);
   subjects: string[] = [];
   allCourses: Courses[] = [];
+  totalCourses : number = 0;
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
@@ -50,6 +51,8 @@ export class KurserComponent{
       this.dataSource.paginator = this.paginator;
       this.dataSource.sort = this.sort;
       this.subjects = [...new Set(courses.map(course => course.subject))];
+      this.totalCourses = courses.length;
+
     });
   }
 

@@ -1,6 +1,10 @@
+.outer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .container {
     position: relative;
-
 }
 
 .image {
@@ -13,6 +17,7 @@
 
 .text {
     position: absolute;
+    max-width: 300px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -61,7 +66,16 @@ h2 {
 
 }
 
+.head-text-container {
+    display: flex;
+    justify-content: center;
+
+
+}
+
 .head-text {
+    display: flex;
+    max-width: 600px;
     padding: 0 30px;
     margin-top: 10px;
     line-height: 140%;
@@ -71,13 +85,97 @@ h2 {
 
 }
 
+.article-tre {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0px;
+}
+
+.article-tre-in {
+    min-height: 400px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: white;
+    border: 0.5px solid rgb(200, 200, 200);
+    line-height: 140%;
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.article-tre-in h2 {
+    line-height: 140%;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6em;
+    font-weight: 300;
+    text-align: left;
+}
+
+.article-image {
+    width: 100%;
+    height: auto;
+}
+
+.panel-flex {
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    gap: 1em;
+
+}
+
 .expansion-panel {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    max-width: 580px;
     padding: 20px 30px;
     line-height: 140%;
     font-family: "Roboto", sans-serif;
     font-size: 1em;
     font-weight: 100;
     background-color: #fef5ea;
+
+}
+
+.student-info {
+    width: 100%;
+    max-width: 580px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffedfa;
+    padding: 20px 50px;
+    justify-content: center;
+    line-height: 140%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+}
+
+.text-under-panel {
+    width: 100%;
+    background-color: white;
+}
+
+.expansion-panel-under {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 30px;
+    line-height: 140%;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.4em;
+    font-weight: 100;
+    background-color: white;
 
 }
 
