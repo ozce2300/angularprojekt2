@@ -46,6 +46,11 @@ nav ul a:hover {
     color: black;
 }
 
+nav ul a.active {
+    text-decoration: underline;
+    color: black;
+
+}
 
 #logo {
     display: flex;
