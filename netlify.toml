@@ -1,7 +1,7 @@
 [build]
   base = "/"
   command = "ng build"
-  publish = "dist/anuglarprojekt2"
+  publish = "dist/anuglarprojekt2/browser"
 
 [[redirects]]
   from = "/*"
