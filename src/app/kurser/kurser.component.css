@@ -238,19 +238,21 @@ h2 {
     .expansion-panel-back {
         width: 100%;
         display: flex;
-justify-content: center;
+        justify-content: center;
         background-color: #fef5ea;
-    
+        margin: 0 20px;
+
     }
 
     .student-info-back {
         width: 100%;
         display: flex;
-justify-content: center;
+        justify-content: center;
         background-color: #ffedfa;
-    
-    }
-    
-
+        margin: 0 20px;
 
     }
+
+
+
+}
