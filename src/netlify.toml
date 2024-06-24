@@ -1,0 +1,10 @@
+[build]
+base= "/"
+command= "ng-build"
+publish=dist/anuglarprojekt2
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
